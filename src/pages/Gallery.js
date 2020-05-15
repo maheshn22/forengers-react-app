@@ -47,11 +47,17 @@ function Gallery(props) {
 			
 			<Content>
 				<h1>Plantation: </h1>
-				<ImageGallery items={images} />;
+				<ImageGallery items={images} />
+				<br/>
+				<br/>
 				<h1>Cleanliness: </h1>
-				<ImageGallery items={images} />;
+				<ImageGallery items={images} />
+				<br/>
+				<br/>
 				<h1>Paper bags: </h1>
-				<ImageGallery items={images} />;
+				<ImageGallery items={images} />
+				<br/>
+				<br/>
 				
 			
 			
