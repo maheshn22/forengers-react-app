@@ -6,6 +6,8 @@ import HomePage from '../pages/HomePage'
 import AboutPage from '../pages/AboutPage'
 import ContactPage from '../pages/ContactPage'
 import Gallery from '../pages/Gallery'
+import Timeline from '../pages/Timeline'
+
 
 class Navigation extends Component {
 	constructor(props) {
@@ -16,6 +18,9 @@ class Navigation extends Component {
 				{ title: "Home", path: "/" },
 				{ title: "About", path: "/about" },
 				{ title: "Contact", path: "/contact" },
+				{ title: "Gallery", path: "/gallery" },
+				{ title: "Timeline", path: "/timeline" },
+				
 			],
 			home: {
 				title: "The Best Home Page",
@@ -30,6 +35,9 @@ class Navigation extends Component {
 			},
 			gallery: {
 				title: "Gallery"
+			},
+			timeline: {
+				title: "Timeline"
 			}
 		}
 	}
@@ -49,6 +57,7 @@ class Navigation extends Component {
 									<Link className="nav-link" to="/about">About</Link>
 									<Link className="nav-link" to="/contact">Contact</Link>
 									<Link className="nav-link" to="/gallery">Gallery</Link>
+									<Link className="nav-link" to="/timeline">Timeline</Link>
 								</Nav>
 							</Navbar.Collapse>
 						</Navbar>
@@ -57,6 +66,7 @@ class Navigation extends Component {
 						<Route path="/about" exact render={() => <AboutPage title={this.state.about.title}/>}/>
 						<Route path="/contact" exact render={() => <ContactPage title={this.state.contact.title}/>}/>
 						<Route path="/gallery" exact render={() => <Gallery title={this.state.gallery.title}/>}/>
+						<Route path="/timeline" exact render={() => <Timeline title={this.state.timeline.title}/>}/>
 					</Container>
 					
 				</Router>	
