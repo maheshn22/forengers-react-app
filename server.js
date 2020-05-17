@@ -30,9 +30,9 @@ app.get('/*', function (req, res) {
 
 app.post('/api/email',(req,res,next) => {
 
-	sendGrid.setApiKey('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');
+	sendGrid.setApiKey('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');
 	const msg = {
-		to: 'maheshjaeger@gmail.com',
+		to: 'forengerstest01@gmail.com',
 		from: req.body.email,
 		subject: 'Website Contact',
 		text: req.body.message
