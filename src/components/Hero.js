@@ -10,7 +10,8 @@ function Hero(props) {
 						<Col>
 							{ props.title && <h1 className="display-1 font-weight-bolder">{props.title}</h1> }
 							{ props.subtitle && <h1 className="display-4 font-weight-light">{props.subtitle}</h1> }
-							{ props.data && <h1 className="lead font-weight-light">{props.data}</h1> }
+							{ props.data1 && <h1 className="lead font-weight-light">{props.data1}</h1> }
+							{ props.data2 && <h1 className="lead font-weight-light">{props.data2}</h1> }
 						</Col>
 					</Row>
 				</Container>

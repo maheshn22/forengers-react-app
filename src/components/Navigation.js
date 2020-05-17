@@ -25,7 +25,8 @@ class Navigation extends Component {
 			home: {
 				title: "The Best Home Page",
 				subtitle: "Welcome!",
-				data: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+				data1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+				data2: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
 			},
 			about: {
 				title: "About Us"
@@ -62,7 +63,7 @@ class Navigation extends Component {
 							</Navbar.Collapse>
 						</Navbar>
 
-						<Route path="/" exact render={() => <HomePage title={this.state.home.title} subtitle={this.state.home.subtitle} data={this.state.home.data}/>}/>
+						<Route path="/" exact render={() => <HomePage title={this.state.home.title} subtitle={this.state.home.subtitle} data1={this.state.home.data1} data2={this.state.home.data2}/>}/>
 						<Route path="/about" exact render={() => <AboutPage title={this.state.about.title}/>}/>
 						<Route path="/contact" exact render={() => <ContactPage title={this.state.contact.title}/>}/>
 						<Route path="/gallery" exact render={() => <Gallery title={this.state.gallery.title}/>}/>
