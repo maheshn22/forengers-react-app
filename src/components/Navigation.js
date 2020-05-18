@@ -24,10 +24,10 @@ class Navigation extends Component {
 				
 			],
 			home: {
-				title: "Towards the betterment of Humanity",
-				subtitle: "Forengers",
+				title: "Forengers",
+				subtitle: "We root as we route",
 				data1: "Forengers emerged out of a simple idea to plant one sapling per week. With this philosophy, we hosted an event on social media to invite anyone who was interested and saw a good turnout. And it has grown ever since, now we host cleanliness drives along with plantation campaigns. Each sapling we plant is tagged, covered with a shed of bamboo and cloth, watered 4 times a week and tracked for growth. We ensure that every sapling survives the next monsoon season so that it can survive the later stages on its own. Moreover, the garbage we collect is disposed to composting facilities or recycling centers based on the nature of waste ensuring minimum impact.",
-				data2: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+				data2: "We want to shift the focus of masses from mere concern to action. A lot is being shared by people in classrooms, social media platforms, etc but we aim to provide our community a platform where they can actually make an impact."
 			},
 			about: {
 				title: "About Us"
@@ -56,9 +56,10 @@ class Navigation extends Component {
 							src= {logo}
 							width="30"
 							height="30"
-							className="d-inline-block align-top"
+							className="d-inline-block align-top "
 							alt="React Bootstrap logo"
 							href="#"
+							
 						/><span className="nav-link-brand">  Forengers</span>
 						</Navbar.Brand>
 							

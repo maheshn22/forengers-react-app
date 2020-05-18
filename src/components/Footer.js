@@ -5,7 +5,7 @@ import {Container, Row , Col}from 'react-bootstrap'
  function Footer() {
 	return (
 		<div className="main-footer">
-		<hr></hr>
+		
 			<Container className="footer-container m-center" fluid>
 				
 				<Row className="footer-up">
@@ -29,7 +29,7 @@ import {Container, Row , Col}from 'react-bootstrap'
 				
 				<p md={12} className="footer-bottom m-center">
 				
-					&copy; {new Date().getFullYear()} 		|		The Best Site in the World		|		All Rights Reserved 	 
+					&copy; {new Date().getFullYear()} 		|		Forengers		|		All Rights Reserved 	 
 				
 				</p>
 			</Container>			
