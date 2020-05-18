@@ -1,7 +1,7 @@
 import React from 'react';
 
 import man1 from '../assets/man-1.png'
-import woman1 from '../assets/woman-1.png'
+//import woman1 from '../assets/woman-1.png'
 import woman2 from '../assets/woman-2.png'
 
 import ForengerHeadCard from './ForengerHeadCard'
@@ -16,28 +16,28 @@ class ForengerHeads extends React.Component {
 			items: [
 				{
 					id: 0,
-					title: "Jane",
+					title: "Neil Gokhale",
 					subtitle: "",
-					imgSrc: woman1,
-					about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+					imgSrc: man1,
+					about: "Forengers is like a mission for me. Through these weekly drives, I hope to do my bit against the climate change crisis. Working from one event to other, I have learned more about the planet than classrooms could ever teach me. Moreover, the satisfaction after planting saplings and seeing them grow is something which cannot be expressed in words. I want this to become a movement to save our planet from imminent danger of climate change.",
 					link: "",
 					selected: false,
 				},
 				{
 					id: 1,
-					title: "John",
+					title: "Riya Ambedkar",
 					subtitle: "",
-					imgSrc: man1,
-					about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+					imgSrc: woman2,
+					about: "When asked the question: What is our duty towards Mother Nature? I believe most of us have an answer ready. But the real question is: Are we doing enough? Forengers was born when some of us realised that waiting for somebody else to bring about a change is worthless. We call her Mother Earth for a reason. Here at Forengers we make sure that she gets all the love, respect and care she deserves. What nature taught me was definitely what I would like to call “beyond the scope of books”.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
 					link: "",
 					selected: false,
 				},			
 				{
 					id: 2,
-					title: "Janet",
+					title: "Devansh Sharma",
 					subtitle: " ",
-					imgSrc: woman2,
-					about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+					imgSrc: man1,
+					about: "Forengers is my place of peace! Being there from Day 1 from the first drive ever makes it a little special and has a permanent place in my heart. I joined Forengers as I felt the need to bring about a change and I felt the need to do something different as it's high time now that we cared about the environment. The fact that we can have fun, enjoy ourselves and make genuine sizeable contribution towards helping the environment makes me feel happy and satisfied. We strive to bring about a change in people's actions, mentality and vision, and I personally feel that's the least we could do for the environment, and ultimately for ourselves!",
 					link: "",
 					selected: false,
 				},

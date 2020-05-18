@@ -1,9 +1,9 @@
 import React from 'react';
 
-import deer from '../assets/deer.jpg'
+//import deer from '../assets/deer.jpg'
 import panda from '../assets/panda.jpg'
 import dog from '../assets/dog.jpg'
-
+import plantation01 from '../assets/plantation01.jpg'
 import Card from './Card'
 import { Container,Row } from 'react-bootstrap';
 
@@ -16,9 +16,9 @@ class Carousel extends React.Component {
 			items: [
 				{
 					id: 0,
-					title: "Deer",
+					title: "Plantation",
 					subtitle: "",
-					imgSrc: deer,
+					imgSrc: [plantation01],
 					link: "",
 					selected: false,
 				},

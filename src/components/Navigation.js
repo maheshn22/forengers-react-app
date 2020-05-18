@@ -7,6 +7,7 @@ import AboutPage from '../pages/AboutPage'
 import ContactPage from '../pages/ContactPage'
 import Gallery from '../pages/Gallery'
 import Timeline from '../pages/Timeline'
+import logo from '../assets/logo.png'
 
 
 class Navigation extends Component {
@@ -23,9 +24,9 @@ class Navigation extends Component {
 				
 			],
 			home: {
-				title: "The Best Home Page",
-				subtitle: "Welcome!",
-				data1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+				title: "Towards the betterment of Humanity",
+				subtitle: "Forengers",
+				data1: "Forengers emerged out of a simple idea to plant one sapling per week. With this philosophy, we hosted an event on social media to invite anyone who was interested and saw a good turnout. And it has grown ever since, now we host cleanliness drives along with plantation campaigns. Each sapling we plant is tagged, covered with a shed of bamboo and cloth, watered 4 times a week and tracked for growth. We ensure that every sapling survives the next monsoon season so that it can survive the later stages on its own. Moreover, the garbage we collect is disposed to composting facilities or recycling centers based on the nature of waste ensuring minimum impact.",
 				data2: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
 			},
 			about: {
@@ -50,7 +51,18 @@ class Navigation extends Component {
 					<Container className="p-0" fluid={true}>
 
 						<Navbar className="border-button sticky-top" bg="dark" variant="dark" expand="lg">
-							<Link className="nav-link" to="/">The Best Site in the World</Link>
+						<Navbar.Brand href="/">
+						<img
+							src= {logo}
+							width="30"
+							height="30"
+							className="d-inline-block align-top"
+							alt="React Bootstrap logo"
+							href="#"
+						/><span className="nav-link-brand">  Forengers</span>
+						</Navbar.Brand>
+							
+							
 							<Navbar.Toggle aria-controls="navbar-toggle" />
 							<Navbar.Collapse id="navbar-toggle">
 								<Nav className="ml-auto">

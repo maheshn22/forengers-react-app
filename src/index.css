@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #142614;
 }
 
 code {
@@ -37,6 +38,7 @@ code {
 .m-card-sub-title {
   font-size: 16px;
   margin: 0px;
+  text-align: center;
 }
 
 .m-card-about {
@@ -56,8 +58,9 @@ code {
 }
 
 .footer-container {
-  background-color: #F5F5F5;
+  background-color: #292b2c;
   padding-top: 2rem;
+  color: #CCC;
 }
 
 .footer-up{
@@ -87,4 +90,22 @@ code {
   align-items: right;
   align-content: right;
   text-align: center;
+}
+
+.nav-link-brand {
+  color: #CCC;
+  font-size: x-large;
+  
+}
+.nav-link {
+  color: #7ac74f; 
+}
+
+.page {
+  background-color: #142614;
+  color: #e3e7af;
+}
+
+.hero-title {
+  color: #a1cf6b;
 }

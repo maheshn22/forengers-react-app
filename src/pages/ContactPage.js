@@ -64,7 +64,7 @@ handleSubmit = (e) => {
 
 	render() {
 		return (
-			<div>
+			<div className="contact-page page">
 				<Hero title={this.props.title} />
 
 				<Content>

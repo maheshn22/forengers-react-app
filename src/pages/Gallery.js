@@ -42,7 +42,7 @@ function Gallery(props) {
 
 
 	return (
-		<div className="">
+		<div className="gallery-page page">
 			<Hero title={props.title}/>
 			
 			<Content>

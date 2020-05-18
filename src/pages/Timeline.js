@@ -9,7 +9,7 @@ import { MdEvent } from "react-icons/md";
 
 function Timeline(props) {
 	return (
-		<div>
+		<div className="page">
 		<Hero title={props.title} />
 		<VerticalTimeline>
 				<VerticalTimelineElement
