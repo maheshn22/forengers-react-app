@@ -3,29 +3,29 @@ import Hero from '../components/Hero';
 import Content from '../components/Content'
 import ImageGallery from 'react-image-gallery';
 
-import plantation01 from '../assets/gallery-page/plantation01.jpg'
-import plantation02 from '../assets/gallery-page/plantation02.jpg'
-import plantation03 from '../assets/gallery-page/plantation03.jpg'
-import plantation04 from '../assets/gallery-page/plantation04.jpg'
-import plantation05 from '../assets/gallery-page/plantation05.jpg'
-import plantation06 from '../assets/gallery-page/plantation06.jpg'
-import plantation07 from '../assets/gallery-page/plantation07.jpg'
-import plantation08 from '../assets/gallery-page/plantation08.jpg'
-import plantation09 from '../assets/gallery-page/plantation09.jpg'
+import plantation01 from '../assets/gallery-page/plantation01.webp'
+import plantation02 from '../assets/gallery-page/plantation02.webp'
+import plantation03 from '../assets/gallery-page/plantation03.webp'
+import plantation04 from '../assets/gallery-page/plantation04.webp'
+import plantation05 from '../assets/gallery-page/plantation05.webp'
+import plantation06 from '../assets/gallery-page/plantation06.webp'
+import plantation07 from '../assets/gallery-page/plantation07.webp'
+import plantation08 from '../assets/gallery-page/plantation08.webp'
+import plantation09 from '../assets/gallery-page/plantation09.webp'
 
-import paperbag01 from '../assets/gallery-page/paperbag01.jpg'
-import paperbag02 from '../assets/gallery-page/paperbag02.jpg'
-import paperbag03 from '../assets/gallery-page/paperbag03.jpg'
-import paperbag04 from '../assets/gallery-page/paperbag04.jpg'
+import paperbag01 from '../assets/gallery-page/paperbag01.webp'
+import paperbag02 from '../assets/gallery-page/paperbag02.webp'
+import paperbag03 from '../assets/gallery-page/paperbag03.webp'
+import paperbag04 from '../assets/gallery-page/paperbag04.webp'
 
-import cleanliness01 from '../assets/gallery-page/cleanliness01.jpg'
-import cleanliness02 from '../assets/gallery-page/cleanliness02.jpg'
-import cleanliness03 from '../assets/gallery-page/cleanliness03.jpg'
-import cleanliness04 from '../assets/gallery-page/cleanliness04.jpg'
-import cleanliness05 from '../assets/gallery-page/cleanliness05.jpg'
-import cleanliness06 from '../assets/gallery-page/cleanliness06.jpg'
-import cleanliness07 from '../assets/gallery-page/cleanliness07.jpg'
-import cleanliness08 from '../assets/gallery-page/cleanliness08.jpg'
+import cleanliness01 from '../assets/gallery-page/cleanliness01.webp'
+import cleanliness02 from '../assets/gallery-page/cleanliness02.webp'
+import cleanliness03 from '../assets/gallery-page/cleanliness03.webp'
+import cleanliness04 from '../assets/gallery-page/cleanliness04.webp'
+import cleanliness05 from '../assets/gallery-page/cleanliness05.webp'
+import cleanliness06 from '../assets/gallery-page/cleanliness06.webp'
+import cleanliness07 from '../assets/gallery-page/cleanliness07.webp'
+import cleanliness08 from '../assets/gallery-page/cleanliness08.webp'
 
 
 //import "react-image-gallery/styles/scss/image-gallery.scss";
@@ -144,11 +144,11 @@ function Gallery(props) {
 				<br/>
 				<br/>
 				<h1>Cleanliness: </h1>
-				<ImageGallery items={paperbagImages} />
+				<ImageGallery items={cleanlinessImages} />
 				<br/>
 				<br/>
 				<h1>Paper bags: </h1>
-				<ImageGallery items={cleanlinessImages} />
+				<ImageGallery items={paperbagImages} />
 				<br/>
 				<br/>
 				
