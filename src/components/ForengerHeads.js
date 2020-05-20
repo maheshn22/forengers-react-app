@@ -28,7 +28,7 @@ class ForengerHeads extends React.Component {
 					title: "Riya Ambedkar",
 					subtitle: "",
 					imgSrc: woman2,
-					about: "When asked the question: What is our duty towards Mother Nature? I believe most of us have an answer ready. But the real question is: Are we doing enough? Forengers was born when some of us realised that waiting for somebody else to bring about a change is worthless. We call her Mother Earth for a reason. Here at Forengers we make sure that she gets all the love, respect and care she deserves. What nature taught me was definitely what I would like to call “beyond the scope of books”.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+					about: "When asked the question: What is our duty towards Mother Nature? I believe most of us have an answer ready. But the real question is: Are we doing enough? Forengers was born when some of us realised that waiting for somebody else to bring about a change is worthless. We call her Mother Earth for a reason. Here at Forengers we make sure that she gets all the love, respect and care she deserves. What nature taught me was definitely what I would like to call “beyond the scope of books”.",
 					link: "",
 					selected: false,
 				},			
@@ -72,7 +72,8 @@ class ForengerHeads extends React.Component {
 		return(
 			<div>
 				<Container fluid={true}>
-					<Row className="justify-content-center lead border-top">
+				<h2 className="m-center display-4 lgreen border-top">Our Heads</h2>
+					<Row className="justify-content-center lead ">
 						{this.makeItems(this.state.items)}
 					</Row>
 				</Container>

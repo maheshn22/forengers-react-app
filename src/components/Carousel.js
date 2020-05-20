@@ -67,7 +67,7 @@ class Carousel extends React.Component {
 	render() {
 		return(
 			<div>
-				<Container fluid={true}>
+				<Container>
 					<Row className="justify-content-around border-top">
 						{this.makeItems(this.state.items)}
 					</Row>

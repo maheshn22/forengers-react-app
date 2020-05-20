@@ -78,8 +78,9 @@ code {
 
 .m-forenger-card-image {
   border-radius: 10px;
-  width:330px;
-  height:330px;
+  border-top: 10px;
+  width:310px;
+  height:310px;
   box-shadow: 0px 0px 3px 1px #CCC;
 }
 
@@ -109,5 +110,15 @@ code {
 }
 
 .hero-title {
+  color: #a1cf6b;
+}
+
+.card-bg {
+  background-color: #a1cf6b;
+  color: #142614;
+  font-weight: bold;
+}
+
+.lgreen {
   color: #a1cf6b;
 }
