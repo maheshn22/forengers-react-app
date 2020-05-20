@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from '../components/Hero';
 import Content from '../components/Content'
 import ImageGallery from 'react-image-gallery';
+import {Container} from 'react-bootstrap'
 
 import plantation01 from '../assets/gallery-page/plantation01.webp'
 import plantation02 from '../assets/gallery-page/plantation02.webp'
@@ -138,6 +139,7 @@ function Gallery(props) {
 		<div className="gallery-page page">
 			<Hero title={props.title}/>
 			
+			<Container fluid={true}>
 			<Content>
 				<h1>Plantation: </h1>
 				<ImageGallery items={plantationImages} />
@@ -158,6 +160,7 @@ function Gallery(props) {
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
 			</p>
 			</Content>
+			</Container>
 		</div>
 	)
 }

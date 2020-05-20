@@ -71,8 +71,8 @@ class ForengerHeads extends React.Component {
 	render() {
 		return(
 			<div>
-				<Container>
-					<Row className="justify-content-around border-top">
+				<Container fluid={true}>
+					<Row className="justify-content-center lead border-top">
 						{this.makeItems(this.state.items)}
 					</Row>
 				</Container>

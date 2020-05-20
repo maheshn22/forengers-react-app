@@ -8,8 +8,8 @@ function Hero(props) {
 				<Container className="">
 					<Row className=" ">
 						<Col>
-							{ props.title && <h1 className="display-4 font-weight-bolder hero-title">{props.title}</h1> }
-							{ props.subtitle && <h1 className="display-3 font-weight-light">{props.subtitle}</h1> }
+							{ props.title && <h1 className="lead display-4 font-weight hero-title">{props.title}</h1> }
+							{ props.subtitle && <h1 className="lead display-3 font-weight-light">{props.subtitle}</h1> }
 							{ props.data1 && <h1 className="lead font-weight-light">{props.data1}</h1> }
 							{ props.data2 && <h1 className="lead font-weight-light">{props.data2}</h1> }
 						</Col>

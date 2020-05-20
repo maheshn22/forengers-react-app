@@ -9,7 +9,7 @@ import ForengerHeads from '../components/ForengerHeads'
 
 function AboutPage(props) {
 	return (
-		<div className="about-page page" >
+		<div className="about-page page lead " >
 			<Hero title={props.title} />
 			<Container fluid={true}>
 			<Content>
