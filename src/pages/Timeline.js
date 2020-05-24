@@ -27,10 +27,10 @@ function Timeline(props) {
 					iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
 					icon={ <MdEvent />}
 				>
-					<h3 className="vertical-timeline-element-title">Creative Director</h3>
-					<h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+					<h3 className="vertical-timeline-element-title">Event</h3>
+					<h4 className="vertical-timeline-element-subtitle">Location</h4>
 					<p>
-						Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+					Description
 					</p>
 					<img src={event1} className="event-img" alt="Event"></img>
 				</VerticalTimelineElement>
@@ -43,10 +43,10 @@ function Timeline(props) {
 					iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
 					icon={<MdEvent />}
 				>
-					<h3 className="vertical-timeline-element-title">Art Director</h3>
-					<h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
+					<h3 className="vertical-timeline-element-title">Event</h3>
+					<h4 className="vertical-timeline-element-subtitle">Location</h4>
 					<p>
-						Creative Direction, User Experience, Visual Design, SEO, Online Marketing
+					Description
 					</p>
 					<img src={event2} className="event-img" alt="Event"></img>
 				</VerticalTimelineElement>
@@ -59,10 +59,10 @@ function Timeline(props) {
 					iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
 					icon={<MdEvent />}
 				>
-					<h3 className="vertical-timeline-element-title">Web Designer</h3>
-					<h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
+					<h3 className="vertical-timeline-element-title">Event</h3>
+					<h4 className="vertical-timeline-element-subtitle">Location</h4>
 					<p>
-						User Experience, Visual Design
+					Description
 					</p>
 					<img src={event3} className="event-img" alt="Event "></img>
 				</VerticalTimelineElement>
@@ -75,10 +75,10 @@ function Timeline(props) {
 					iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
 					icon={<MdEvent />}
 				>
-					<h3 className="vertical-timeline-element-title">Web Designer</h3>
-					<h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
+					<h3 className="vertical-timeline-element-title">Event</h3>
+					<h4 className="vertical-timeline-element-subtitle">Location</h4>
 					<p>
-						User Experience, Visual Design
+					Description
 					</p>
 					<img src={event4} className="event-img" alt="Event "></img>
 				</VerticalTimelineElement>
@@ -91,10 +91,10 @@ function Timeline(props) {
 					iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
 					icon={<MdEvent />}
 				>
-					<h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-					<h4 className="vertical-timeline-element-subtitle">Online Course</h4>
+					<h3 className="vertical-timeline-element-title">Event</h3>
+					<h4 className="vertical-timeline-element-subtitle">Location</h4>
 					<p>
-						Strategy, Social Media
+					Description
 					</p>
 					<img src={event5} className="event-img" alt="Event "></img>
 				</VerticalTimelineElement>
@@ -107,10 +107,10 @@ function Timeline(props) {
 					iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
 					icon={<MdEvent />}
 				>
-					<h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
-					<h4 className="vertical-timeline-element-subtitle">Certification</h4>
+					<h3 className="vertical-timeline-element-title">Event</h3>
+					<h4 className="vertical-timeline-element-subtitle">Location</h4>
 					<p>
-						Creative Direction, User Experience, Visual Design
+					Description
 					</p>
 					<img src={event6} className="event-img" alt="Event "></img>
 				</VerticalTimelineElement>
@@ -123,10 +123,10 @@ function Timeline(props) {
 					iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
 					icon={<MdEvent />}
 				>
-					<h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
-					<h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
+					<h3 className="vertical-timeline-element-title">Event</h3>
+					<h4 className="vertical-timeline-element-subtitle">Location</h4>
 					<p>
-						Creative Direction, Visual Design
+						Description
 					</p>
 					<img src={event1} className="event-img" alt="Event "></img>
 				</VerticalTimelineElement>

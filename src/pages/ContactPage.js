@@ -14,7 +14,7 @@ class ContactPage extends React.Component {
 			email: "",
 			phone: "",
 			age: "",
-			occupation: "",
+			area: "",
 			message: "",
 			disabled: false,
 			emailSent: null,
@@ -67,24 +67,48 @@ handleSubmit = (e) => {
 			<div className="contact-page page ">
 				<Hero title={this.props.title} />
 
-				<Content>
+				<Content className="">
+				<div className="card-bg">
+				<br/>
 					<Form onSubmit={this.handleSubmit} className="m-lef">
 						 <Form.Group as={Row}>
 							 <Form.Label  column col-sm-2 sm="2" align="m-center" htmlFor="full-name">Full Name</Form.Label>
 							 <Col sm="10">
-							 <Form.Control id="full-name" name="name" type="text" value={this.state.name} onChange={this.handleChange}/>
+							 <Form.Control required id="full-name" name="name" type="text" value={this.state.name} onChange={this.handleChange}/>
 							 </Col>
 						 </Form.Group>
 
 						 <Form.Group as={Row}>
-							 <Form.Label column col-sm-2 sm="2" htmlFor="email">Email</Form.Label>
+							 <Form.Label column col-sm-2 sm="2" htmlFor="age">Age</Form.Label>
 							 <Col sm="10">
-							 <Form.Control id="email" name="email" type="text" value={this.state.email} onChange={this.handleChange}/>
+							 <Form.Control required id="age" name="age" type="number" value={this.state.age} onChange={this.handleChange}/>
 							 </Col>
 						 </Form.Group>
 						 
 						 <Form.Group as={Row}>
-							 <Form.Label column col-sm-2 sm="2" htmlFor="message">Message</Form.Label>
+							 <Form.Label column col-sm-2 sm="2" htmlFor="email">Email</Form.Label>
+							 <Col sm="10">
+							 <Form.Control required id="email" name="email" type="text" value={this.state.email} onChange={this.handleChange}/>
+							 </Col>
+						 </Form.Group>
+
+						 <Form.Group as={Row}>
+							 <Form.Label column col-sm-2 sm="2" htmlFor="phone">Phone Number</Form.Label>
+							 <Col sm="10">
+							 <Form.Control id="phone" name="phone" type="number" value={this.state.phone} onChange={this.handleChange}/>
+							 </Col>
+						 </Form.Group>
+						 
+						 <Form.Group as={Row}>
+							 <Form.Label column col-sm-2 sm="2" htmlFor="area">Area</Form.Label>
+							 <Col sm="10">
+							 <Form.Control required id="area" name="area" type="text" value={this.state.area} onChange={this.handleChange}/>
+							 </Col>
+						 </Form.Group>
+						 
+						 
+						 <Form.Group as={Row}>
+							 <Form.Label column col-sm-2 sm="2" htmlFor="message">Any Comments</Form.Label>
 							 <Col sm="10">
 							 <Form.Control id="message" name="message" type="textarea" value={this.state.message} onChange={this.handleChange}/>
 							 </Col>
@@ -100,7 +124,7 @@ handleSubmit = (e) => {
 							 {this.state.emailSent ===false && <p className="d-inline err-msg">Form Not Submitted.</p>}
 
 					</Form>
-
+					</div>
 					
 				</Content>
 

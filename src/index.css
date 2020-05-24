@@ -136,3 +136,7 @@ code {
   align-content: center;
   text-align: center;
 }
+
+.form-control {
+  width: 50%;
+}
