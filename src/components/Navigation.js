@@ -33,14 +33,15 @@ class Navigation extends Component {
 				title: "About Us"
 			},
 			contact: {
-				title: "Get in touch with us!"
+				title: "Join Us!"
 			},
 			gallery: {
 				title: "Gallery"
 			},
 			timeline: {
 				title: "Timeline"
-			}
+			},
+			
 		}
 	}
 

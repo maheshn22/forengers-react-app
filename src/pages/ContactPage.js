@@ -2,7 +2,7 @@ import React from 'react'
 import Hero from '../components/Hero';
 import Content from '../components/Content';
 
-import {Form,Button} from 'react-bootstrap'
+import {Form,Button,Col,Row} from 'react-bootstrap'
 import Axios from 'axios';
 
 class ContactPage extends React.Component {
@@ -64,24 +64,30 @@ handleSubmit = (e) => {
 
 	render() {
 		return (
-			<div className="contact-page page">
+			<div className="contact-page page ">
 				<Hero title={this.props.title} />
 
 				<Content>
-					<Form onSubmit={this.handleSubmit} className="m-left">
-						 <Form.Group>
-							 <Form.Label htmlFor="full-name">Full Name</Form.Label>
+					<Form onSubmit={this.handleSubmit} className="m-lef">
+						 <Form.Group as={Row}>
+							 <Form.Label  column col-sm-2 sm="2" align="m-center" htmlFor="full-name">Full Name</Form.Label>
+							 <Col sm="10">
 							 <Form.Control id="full-name" name="name" type="text" value={this.state.name} onChange={this.handleChange}/>
+							 </Col>
 						 </Form.Group>
 
-						 <Form.Group>
-							 <Form.Label htmlFor="email">Email</Form.Label>
+						 <Form.Group as={Row}>
+							 <Form.Label column col-sm-2 sm="2" htmlFor="email">Email</Form.Label>
+							 <Col sm="10">
 							 <Form.Control id="email" name="email" type="text" value={this.state.email} onChange={this.handleChange}/>
+							 </Col>
 						 </Form.Group>
 						 
-						 <Form.Group>
-							 <Form.Label htmlFor="message">Message</Form.Label>
+						 <Form.Group as={Row}>
+							 <Form.Label column col-sm-2 sm="2" htmlFor="message">Message</Form.Label>
+							 <Col sm="10">
 							 <Form.Control id="message" name="message" type="textarea" value={this.state.message} onChange={this.handleChange}/>
+							 </Col>
 						 </Form.Group>
 
 						 
@@ -94,8 +100,12 @@ handleSubmit = (e) => {
 							 {this.state.emailSent ===false && <p className="d-inline err-msg">Form Not Submitted.</p>}
 
 					</Form>
+
+					
 				</Content>
 
+				
+				<br/>
 
 			</div>
 		)
