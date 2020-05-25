@@ -5,6 +5,7 @@ import {Container,Navbar,Nav} from 'react-bootstrap'
 import HomePage from '../pages/HomePage'
 import AboutPage from '../pages/AboutPage'
 import ContactPage from '../pages/ContactPage'
+import ContactPagee from '../pages/ContactPagee'
 import Gallery from '../pages/Gallery'
 import Timeline from '../pages/Timeline'
 import logo from '../assets/logo.png'
@@ -79,7 +80,7 @@ class Navigation extends Component {
 
 						<Route path="/" exact render={() => <HomePage title={this.state.home.title} subtitle={this.state.home.subtitle} data1={this.state.home.data1} data2={this.state.home.data2}/>}/>
 						<Route path="/about" exact render={() => <AboutPage title={this.state.about.title}/>}/>
-						<Route path="/contact" exact render={() => <ContactPage title={this.state.contact.title}/>}/>
+						<Route path="/contact" exact render={() => <ContactPagee title={this.state.contact.title}/>}/>
 						<Route path="/gallery" exact render={() => <Gallery title={this.state.gallery.title}/>}/>
 						<Route path="/timeline" exact render={() => <Timeline title={this.state.timeline.title}/>}/>
 					</Container>

@@ -22,18 +22,23 @@ app.use(favicon(__dirname + '/build/favicon.ico'));
 // the __dirname is the current directory from where the script is running
 app.use(express.static(__dirname));
 app.use(express.static(path.join(__dirname, 'build')));
+
+
 app.get('/ping', function (req, res) {
  return res.send('pong');
 });
+
 app.get('/*', function (req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
-app.post('/api/email',(req,res,next) => {
+
+
+app.post('/api/emai',(req,res,next) => {
 
 	sendGrid.setApiKey('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');
 	const msg = {
-		to: 'forengerstest01@gmail.com',
+		to: 'mailto:forengerstest01@gmail.com',
 		from: req.body.email,
 		subject: 'Website Contact',
 		text: req.body.message
@@ -58,8 +63,8 @@ if (process.env.NODE_ENV ==='production') {
 }
 */
 
-const startServer = (port)=>{
+const startServer = (port) => {
     app.listen(port);
-    console.log("App is listening on port : "+port);
+    console.log("App is listening on port: "+port);
 }
 startServer(port);
