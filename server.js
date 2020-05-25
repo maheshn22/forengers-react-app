@@ -34,29 +34,7 @@ app.get('/*', function (req, res) {
 
 
 
-app.post('/api/emai',(req,res,next) => {
 
-	sendGrid.setApiKey('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');
-	const msg = {
-		to: 'mailto:forengerstest01@gmail.com',
-		from: req.body.email,
-		subject: 'Website Contact',
-		text: req.body.message
-	}
-
-	sendGrid.send(msg)
-		.then(result => {
-			res.status(200).json({
-				success:true
-			})
-		})
-		.catch(err => {
-			console.log('error: ',err);
-			res.status(401).json({
-				success: false
-			})
-		})
-})
 /*
 if (process.env.NODE_ENV ==='production') {
 	app.use(express.static(''))
