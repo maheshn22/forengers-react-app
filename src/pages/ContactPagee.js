@@ -38,52 +38,53 @@ class ContactPage extends React.Component {
     return (
       <div className="contact-page page m-center">
       <Hero title={this.props.title} />
+      <div className="contact-form">
       <Form
       onSubmit={this.handleSubmit}
       action="https://formspree.io/mrgyppjj"
       method="POST"
       className="m-lef">
         <Form.Group as={Row}>
-          <Form.Label column col-sm-2 sm="2" htmlFor="full-name">Full Name</Form.Label>
-          <Col sm="10">
+          <Form.Label htmlFor="full-name">Full Name</Form.Label>
+          
           <Form.Control required id="full-name" name="name" type="text" value={this.state.name} onChange={this.handleChange}/>
-          </Col>
+          
         </Form.Group>
 
         <Form.Group as={Row}>
-          <Form.Label column col-sm-2 sm="2" htmlFor="age">Age</Form.Label>
-          <Col sm="10">
+          <Form.Label  htmlFor="age">Age</Form.Label>
+          
           <Form.Control required id="age" name="age" type="number" value={this.state.age} onChange={this.handleChange}/>
-          </Col>
+          
         </Form.Group>
 
         <Form.Group as={Row}>
-          <Form.Label column col-sm-2 sm="2" htmlFor="email">Email</Form.Label>
-          <Col sm="10">
+          <Form.Label htmlFor="email">Email</Form.Label>
+          
           <Form.Control required id="email" name="email" type="email" value={this.state.email} onChange={this.handleChange}/>
-          </Col>
+          
         </Form.Group>
 
         <Form.Group as={Row}>
-          <Form.Label column col-sm-2 sm="2" htmlFor="phone">Phone</Form.Label>
-          <Col sm="10">
+          <Form.Label htmlFor="phone">Phone</Form.Label>
+          
           <Form.Control id="phone" name="phone" type="tel" value={this.state.phone} onChange={this.handleChange}/>
-          </Col>
+          
         </Form.Group>
 
 
         <Form.Group as={Row}>
-          <Form.Label column col-sm-2 sm="2" htmlFor="area">Area</Form.Label>
-          <Col sm="10">
+          <Form.Label htmlFor="area">Area</Form.Label>
+         
           <Form.Control required  id="area" name="area" type="text" value={this.state.area} onChange={this.handleChange}/>
-          </Col>
+          
         </Form.Group>
         
         <Form.Group as={Row}>
-          <Form.Label column col-sm-2 sm="2" htmlFor="message">Any Comments</Form.Label>
-          <Col sm="10">
+          <Form.Label  htmlFor="message">Any Comments</Form.Label>
+          
           <Form.Control id="message" name="message" type="textarea" value={this.state.message} onChange={this.handleChange}/>
-          </Col>
+          
         </Form.Group>
 
         
@@ -94,6 +95,7 @@ class ContactPage extends React.Component {
           {status === "SUCCESS" && <p className="d-inline success-msg">Form Successfully Submitted!</p> }
           {status === "ERROR" && <p className="d-inline err-msg">Form Not Submitted.</p>}
         </Form>
+        </div>
       </div>
     );
   }

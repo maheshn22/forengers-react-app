@@ -33,8 +33,31 @@ app.get('/*', function (req, res) {
 });
 
 
+/*
+app.post('/api/emai',(req,res,next) => {
 
+	sendGrid.setApiKey('');
+	const msg = {
+		to: 'forengerstest01@gmail.com',
+		from: req.body.email,
+		subject: 'Website Contact',
+		text: req.body.message
+	}
 
+	sendGrid.send(msg)
+		.then(result => {
+			res.status(200).json({
+				success:true
+			})
+		})
+		.catch(err => {
+			console.log('error: ',err);
+			res.status(401).json({
+				success: false
+			})
+		})
+})
+*/
 /*
 if (process.env.NODE_ENV ==='production') {
 	app.use(express.static(''))

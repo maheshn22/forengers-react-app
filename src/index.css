@@ -84,8 +84,8 @@ code {
 }
 
 .m-center {
-  align-items: right;
-  align-content: right;
+  /*align-items: right;
+  align-content: right;*/
   text-align: center;
 }
 .m-left {
@@ -138,5 +138,13 @@ code {
 }
 
 .form-control {
-  width: 100%;
+  width: 500px;
+}
+
+.contact-form {
+  padding-left: 2rem;
+ /* width:100%; */
+  align-self: center;
+  align-content: center;
+  text-align: center;
 }

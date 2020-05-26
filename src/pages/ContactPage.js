@@ -3,36 +3,104 @@
 // Finally, add a <MyForm/> element whereever you wish to display the form.
 
 import React from "react";
+import Hero from '../components/Hero';
+import Content from '../components/Content';
 
-export default class MyForm extends React.Component {
+import {Form,Button,Col,Row} from 'react-bootstrap'
+
+class ContactPage extends React.Component {
   constructor(props) {
     super(props);
-    this.submitForm = this.submitForm.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
     this.state = {
+      name: "",
+			email: "",
+			phone: "",
+			age: "",
+			occupation: "",
+			message: "",
       status: ""
     };
+  }
+
+  handleChange = (e) => {
+    const target = e.target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+    const name = target.name;
+  
+    this.setState({
+      [name]: value
+    })
   }
 
   render() {
     const { status } = this.state;
     return (
-      <form
-        onSubmit={this.submitForm}
-        action="https://formspree.io/mrgyppjj"
-        method="POST"
-      >
+      <div className="contact-page page m-center">
+      <Hero title={this.props.title} />
+      <div className="contact-form">
+      <Form
+      onSubmit={this.handleSubmit}
+      action="https://formspree.io/mrgyppjj"
+      method="POST"
+      className="m-lef">
+        <Form.Group as={Row}>
+          <Form.Label column col-sm-2 sm="2" htmlFor="full-name">Full Name</Form.Label>
+          <Col sm="10">
+          <Form.Control required id="full-name" name="name" type="text" value={this.state.name} onChange={this.handleChange}/>
+          </Col>
+        </Form.Group>
+
+        <Form.Group as={Row}>
+          <Form.Label column col-sm-2 sm="2" htmlFor="age">Age</Form.Label>
+          <Col sm="10">
+          <Form.Control required id="age" name="age" type="number" value={this.state.age} onChange={this.handleChange}/>
+          </Col>
+        </Form.Group>
+
+        <Form.Group as={Row}>
+          <Form.Label column col-sm-2 sm="2" htmlFor="email">Email</Form.Label>
+          <Col sm="10">
+          <Form.Control required id="email" name="email" type="email" value={this.state.email} onChange={this.handleChange}/>
+          </Col>
+        </Form.Group>
+
+        <Form.Group as={Row}>
+          <Form.Label column col-sm-2 sm="2" htmlFor="phone">Phone</Form.Label>
+          <Col sm="10">
+          <Form.Control id="phone" name="phone" type="tel" value={this.state.phone} onChange={this.handleChange}/>
+          </Col>
+        </Form.Group>
+
+
+        <Form.Group as={Row}>
+          <Form.Label column col-sm-2 sm="2" htmlFor="area">Area</Form.Label>
+          <Col sm="10">
+          <Form.Control required  id="area" name="area" type="text" value={this.state.area} onChange={this.handleChange}/>
+          </Col>
+        </Form.Group>
         
-        <label>Email:</label>
-        <input type="email" name="email" />
-        <label>Message:</label>
-        <input type="text" name="message" />
-        {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
-        {status === "ERROR" && <p>Ooops! There was an error.</p>}
-      </form>
+        <Form.Group as={Row}>
+          <Form.Label column col-sm-2 sm="2" htmlFor="message">Any Comments</Form.Label>
+          <Col sm="10">
+          <Form.Control id="message" name="message" type="textarea" value={this.state.message} onChange={this.handleChange}/>
+          </Col>
+        </Form.Group>
+
+        
+
+         <Button className="d-inline-block" variant="primary" type="submit" disable={this.state.disabled}>
+           Send
+         </Button>
+          {status === "SUCCESS" && <p className="d-inline success-msg">Form Successfully Submitted!</p> }
+          {status === "ERROR" && <p className="d-inline err-msg">Form Not Submitted.</p>}
+        </Form>
+        </div>
+      </div>
     );
   }
 
-  submitForm(ev) {
+  handleSubmit = (ev) => {
     ev.preventDefault();
     const form = ev.target;
     const data = new FormData(form);
@@ -51,3 +119,5 @@ export default class MyForm extends React.Component {
     xhr.send(data);
   }
 }
+
+export default ContactPage;
