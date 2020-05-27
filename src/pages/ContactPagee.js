@@ -37,6 +37,7 @@ class ContactPage extends React.Component {
     const { status } = this.state;
     return (
       <div className="contact-page page m-center">
+        <Content>
       <Hero title={this.props.title} />
       <div className="contact-form">
       <Form
@@ -96,6 +97,7 @@ class ContactPage extends React.Component {
           {status === "ERROR" && <p className="d-inline err-msg">Form Not Submitted.</p>}
         </Form>
         </div>
+        </Content>
       </div>
     );
   }

@@ -10,7 +10,7 @@ function ForengerHeadCardInfo (props) {
 		<animated.div className="m-card-info" style={style}>
 			<p className="m-card-title m-center">{props.title}</p>
 			<p className="m-card-sub-title m-center">{props.subtitle}</p>
-			<p className="m-card-about m-center">{props.about}</p>
+			<p className="m-card-about m-center"><b>{props.about}</b></p>
 			
 			
 		</animated.div>

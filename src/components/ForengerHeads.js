@@ -72,7 +72,7 @@ class ForengerHeads extends React.Component {
 		return(
 			<div>
 				<Container fluid={true}>
-				<h2 className="m-center display-4 lgreen border-top">Our Heads</h2>
+				<h2 className="m-center display-4 border-top">Our Heads</h2>
 					<Row className="justify-content-center lead ">
 						{this.makeItems(this.state.items)}
 					</Row>

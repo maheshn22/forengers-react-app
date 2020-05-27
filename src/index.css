@@ -59,7 +59,7 @@ code {
 }
 
 .footer-container {
-  background-color: #292b2c;
+  background-color: #1c5434;
   padding-top: 2rem;
   color: #CCC;
   border-top: #7ac74f;
@@ -75,9 +75,14 @@ code {
   padding-left: 0rem;
 }
 
+.pdtop {
+  padding-top: 20px;
+}
+
 .m-forenger-card-image {
   border-radius: 10px;
   border-top: 10px;
+  
   width:310px;
   height:310px;
   box-shadow: 0px 0px 3px 1px #CCC;
@@ -104,22 +109,26 @@ code {
 }
 
 .page {
-  background-color: #142614;
-  color: #e3e7af;
+  background-color: #6eb433;
+  color: #FFF;
 }
 
 .hero-title {
-  color: #a1cf6b;
+  color: #FFF;
 }
 
 .card-bg {
   background-color: #a1cf6b;
   color: #142614;
-  font-weight: bold;
+  
 }
 
 .lgreen {
   color: #a1cf6b;
+}
+
+.boldtext {
+  font-weight: 800;
 }
 
 .event-img {
